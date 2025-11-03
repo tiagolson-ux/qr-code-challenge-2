@@ -1,2 +1,39 @@
-   .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(128, 45%, 44%); }   
+body {
+  background: var(--clr-bg);
+  color: var(--clr-text-primary);
+  font-family: var(--ff-base);
+  line-height: var(--lh-body);
+}
+
+.site-main {
+  min-height: 110dvh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-200);
+}
+
+.card {
+  background: var(--clr-card);
+  width: min(90vw, 320px); 
+  padding: var(--space-200); 
+  border-radius: var(--radius-card);
+  text-align: center;
+}
+
+.card__img {
+  border-radius: var(--radius-image);
+  margin-bottom: var(--space-200); 
+}
+
+.card__title {
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-title);
+  font-weight: 700;
+  margin-bottom: var(--space-150); 
+}
+
+.card__text {
+  font-size: var(--fs-body);
+  color: var(--clr-text-secondary);
+}
